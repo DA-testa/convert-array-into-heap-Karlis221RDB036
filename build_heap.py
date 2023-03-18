@@ -43,7 +43,7 @@ def main():
             f = open("tests/" + fn, "r")
             text = f.read()
             f.close()
-            n = text.partition("\n")[0]
+            n = int(text.partition("\n")[0])
             data = list(map(int, text.partition("\n")[2].split()))
 
     # checks if lenght of data is the same as the said lenght
